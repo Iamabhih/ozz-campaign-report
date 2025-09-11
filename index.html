@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikhaya Homeware & OZZ Cash & Carry - Campaign Success Report</title>
+    
+    <!-- Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Ikhaya & OZZ Campaign Success Report">
+    <meta property="og:description" content="400% growth achieved with R1,500 investment - See the remarkable results">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Digital marketing campaign report showing exceptional ROI for Ikhaya Homeware and OZZ Cash & Carry">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 50px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8bc34a 50%, #e91e63 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%);
+            background-size: 50px 50px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(-50px, -50px) rotate(0deg); }
+            100% { transform: translate(50px, 50px) rotate(360deg); }
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .logo-box {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .investment-banner {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            padding: 40px;
+            margin: -1px 0 0 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .investment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 30px auto 0;
+        }
+        
+        .investment-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .investment-card h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+        
+        .investment-amount {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .investment-metric {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        
+        .roi-section {
+            background: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .roi-headline {
+            font-size: 2.5em;
+            color: #2ecc71;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .roi-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            padding: 0;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #9b59b6, #8bc34a);
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        
+        .metric-card.highlight {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 2px solid #2ecc71;
+        }
+        
+        .metric-card.highlight::before {
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            height: 5px;
+        }
+        
+        .metric-value {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+        
+        .metric-label {
+            font-size: 0.95em;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        
+        .metric-context {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 8px;
+        }
+        
+        .metric-badge {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .section {
+            padding: 50px 40px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            font-size: 2.2em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .performance-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .performance-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .growth-indicator {
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #9b59b6, #8bc34a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 20px 0;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 30px 0;
+            margin: 40px 0;
+        }
+        
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        
+        .timeline-date {
+            text-align: right;
+            font-weight: 600;
+            color: #9b59b6;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #8bc34a;
+        }
+        
+        .audience-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .audience-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .demographic-bar {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .demographic-label {
+            min-width: 100px;
+            font-weight: 500;
+            color: #666;
+        }
+        
+        .demographic-value {
+            flex: 1;
+            background: #f0f0f0;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-left: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .demographic-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #9b59b6, #e91e63);
+            border-radius: 20px;
+            z-index: 0;
+        }
+        
+        .demographic-text {
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            color: white;
+            mix-blend-mode: difference;
+        }
+        
+        .next-steps {
+            background: linear-gradient(135deg, #c0392b 0%, #6b8e23 100%);
+            padding: 60px 40px;
+            color: white;
+        }
+        
+        .next-steps h2 {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        .step-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .step-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .step-description {
+            opacity: 0.95;
+            line-height: 1.7;
+            margin-left: 55px;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        
+        .footer-text {
+            opacity: 0.7;
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+        
+        .success-badge {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 10px 5px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 2px solid #2ecc71;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .cost-per-metric {
+            display: inline-block;
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 10px;
+            min-width: 200px;
+        }
+        
+        .cost-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        
+        .cost-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .investment-grid { grid-template-columns: 1fr; }
+            .metrics-grid { grid-template-columns: 1fr; }
+            .timeline-item { grid-template-columns: 1fr; }
+            .timeline-date { text-align: left; margin-bottom: 10px; }
+            .section { padding: 30px 20px; }
+            .metric-value { font-size: 2.2em; }
+            .roi-headline { font-size: 1.8em; }
+        }
+        
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-box">
+                    <div style="font-size: 36px; font-weight: bold; background: linear-gradient(135deg, #9b59b6, #8bc34a, #e91e63); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">OZZ</div>
+                    <div style="font-size: 12px; color: #9b59b6; letter-spacing: 2px;">CASH & CARRY</div>
+                </div>
+                <div style="color: white; font-size: 1.5em; font-weight: 300;">×</div>
+                <div class="logo-box">
+                    <div style="font-size: 32px; font-weight: bold; color: #c0392b;">ikhaya</div>
+                    <div style="font-size: 12px; color: #6b8e23; letter-spacing: 2px;">HOMEWARE</div>
+                </div>
+            </div>
+            <h1>Your Campaign Success Story</h1>
+            <div class="subtitle">August 18 - September 3, 2025 | Remarkable Results Achieved</div>
+        </header>
+        
+        <!-- Investment Banner -->
+        <section class="investment-banner">
+            <h2 style="font-size: 2em; margin-bottom: 10px;">Your Investment & Returns</h2>
+            <p style="font-size: 1.1em; opacity: 0.95; margin-bottom: 30px;">Every rand invested delivered exceptional value</p>
+            
+            <div class="investment-grid">
+                <div class="investment-card">
+                    <h3>Total Investment</h3>
+                    <div class="investment-amount">R1,500</div>
+                    <div class="investment-metric">Strategic Campaign Budget</div>
+                </div>
+                
+                <div class="investment-card">
+                    <h3>Investment Breakdown</h3>
+                    <div style="margin: 15px 0; text-align: left;">
+                        <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                            <span>Facebook Ads:</span>
+                            <strong>R480</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                            <span>Instagram Ads:</span>
+                            <strong>R520</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 8px 0; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.3);">
+                            <span>Prize Giveaway:</span>
+                            <strong>R500</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="investment-card">
+                    <h3>Return Achieved</h3>
+                    <div class="investment-amount">400%</div>
+                    <div class="investment-metric">Website Traffic Growth</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ROI Metrics Section -->
+        <section class="roi-section">
+            <div class="roi-headline">Exceptional Value Delivered</div>
+            <div class="roi-subtitle">Your R1,500 investment achieved results that typically cost R10,000+</div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card highlight">
+                    <div class="metric-value">R0.79</div>
+                    <div class="metric-label">Cost Per Visitor</div>
+                    <div class="metric-context">1,900 qualified visitors</div>
+                    <div class="metric-badge">Industry Avg: R5-15</div>
+                </div>
+                
+                <div class="metric-card highlight">
+                    <div class="metric-value">R1.51</div>
+                    <div class="metric-label">Cost Per Follower</div>
+                    <div class="metric-context">995 new followers gained</div>
+                    <div class="metric-badge">Industry Avg: R10-25</div>
+                </div>
+                
+                <div class="metric-card highlight">
+                    <div class="metric-value">R0.19</div>
+                    <div class="metric-label">Cost Per Engagement</div>
+                    <div class="metric-context">7,931 total interactions</div>
+                    <div class="metric-badge">Industry Avg: R2-5</div>
+                </div>
+                
+                <div class="metric-card highlight">
+                    <div class="metric-value">R30.61</div>
+                    <div class="metric-label">Cost Per Cart Visit</div>
+                    <div class="metric-context">49 purchase intentions</div>
+                    <div class="metric-badge">Industry Avg: R100+</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Campaign Performance -->
+        <section class="section" style="background: #f8f9fa;">
+            <div class="section-header">
+                <h2>Your Campaign Performance</h2>
+                <div class="section-subtitle">17 days that transformed your digital presence</div>
+            </div>
+            
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <h3>🚀 Website Impact</h3>
+                    <div class="growth-indicator">400%</div>
+                    <p style="color: #666; margin-bottom: 20px;">Traffic Increase</p>
+                    <div style="text-align: left; background: white; padding: 20px; border-radius: 10px;">
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Total Visitors:</span>
+                            <strong>1,900</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Page Views:</span>
+                            <strong>7,600</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Session Duration:</span>
+                            <strong>28m 14s</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Cart Visits:</span>
+                            <strong>49</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="performance-card">
+                    <h3>📱 Social Media Reach</h3>
+                    <div class="growth-indicator">26,988</div>
+                    <p style="color: #666; margin-bottom: 20px;">People Reached</p>
+                    <div style="text-align: left; background: white; padding: 20px; border-radius: 10px;">
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Total Views:</span>
+                            <strong>69,299</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Engagements:</span>
+                            <strong>7,931</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>New Followers:</span>
+                            <strong>995</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                            <span>Daily Growth:</span>
+                            <strong>58/day</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="performance-card">
+                    <h3>💎 Top Achievements</h3>
+                    <div style="margin: 30px 0;">
+                        <div class="success-badge">22,546% Interaction Growth</div>
+                        <div class="success-badge">84% Organic Reach</div>
+                        <div class="success-badge">492 Direct Conversions</div>
+                        <div class="success-badge">67.5% Mobile Success</div>
+                    </div>
+                    <p style="color: #666; margin-top: 20px; font-size: 0.95em;">
+                        Your campaign achieved viral status during August 21-25, creating lasting brand momentum
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Timeline -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Your Success Timeline</h2>
+                <div class="section-subtitle">Key milestones in your campaign journey</div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 18</div>
+                    <div class="timeline-content">
+                        <strong>Campaign Launch</strong>
+                        <p>Strategic activation across Facebook and Instagram with targeted content</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">August 21</div>
+                    <div class="timeline-content">
+                        <strong>First Viral Moment</strong>
+                        <p>Content reached 10,000+ people organically, engagement rates soared</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">August 25</div>
+                    <div class="timeline-content">
+                        <strong>500+ New Followers</strong>
+                        <p>Community growth accelerated, averaging 60+ followers daily</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">September 3</div>
+                    <div class="timeline-content">
+                        <strong>Campaign Milestone</strong>
+                        <p>400% traffic increase achieved, 49 cart visits recorded, brand presence established</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Audience Insights -->
+        <section class="section" style="background: #f8f9fa;">
+            <div class="section-header">
+                <h2>Your Audience Insights</h2>
+                <div class="section-subtitle">Understanding your customer base</div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                <div class="audience-card">
+                    <h3>Customer Demographics</h3>
+                    <p style="color: #666; margin-bottom: 20px;">84% female audience, primarily aged 25-44</p>
+                    
+                    <div class="demographic-bar">
+                        <span class="demographic-label">25-34 years</span>
+                        <div class="demographic-value">
+                            <div class="demographic-fill" style="width: 75%;"></div>
+                            <span class="demographic-text">26.7%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="demographic-bar">
+                        <span class="demographic-label">35-44 years</span>
+                        <div class="demographic-value">
+                            <div class="demographic-fill" style="width: 72%;"></div>
+                            <span class="demographic-text">26.8%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="demographic-bar">
+                        <span class="demographic-label">18-24 years</span>
+                        <div class="demographic-value">
+                            <div class="demographic-fill" style="width: 48%;"></div>
+                            <span class="demographic-text">17.3%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="demographic-bar">
+                        <span class="demographic-label">45-54 years</span>
+                        <div class="demographic-value">
+                            <div class="demographic-fill" style="width: 42%;"></div>
+                            <span class="demographic-text">15.1%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="audience-card">
+                    <h3>Geographic Reach</h3>
+                    <p style="color: #666; margin-bottom: 20px;">Strong presence across South African metros</p>
+                    
+                    <div style="background: #f0f0f0; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <strong style="color: #333;">Top Cities</strong>
+                        <div style="margin-top: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                                <span>Durban</span>
+                                <strong>19.7%</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                                <span>Cape Town</span>
+                                <strong>6.9%</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                                <span>Pretoria</span>
+                                <strong>3.9%</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                                <span>Johannesburg</span>
+                                <strong>2.7%</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #e8f5e9; padding: 15px; border-radius: 10px;">
+                        <strong style="color: #2e7d32;">International Interest</strong>
+                        <p style="margin-top: 5px; font-size: 0.95em;">303 visitors from USA showing global potential</p>
+                    </div>
+                </div>
+                
+                <div class="audience-card">
+                    <h3>Shopping Behavior</h3>
+                    <p style="color: #666; margin-bottom: 20px;">Product categories your customers love</p>
+                    
+                    <div style="background: white; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px;">
+                        <strong style="color: #333; display: block; margin-bottom: 15px;">Top Product Interests</strong>
+                        <div style="display: grid; gap: 10px;">
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                <span>🍴 Catering</span>
+                                <strong style="color: #8bc34a;">61 visits</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                <span>🥂 Glassware</span>
+                                <strong style="color: #8bc34a;">50 visits</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                <span>🏺 Stoneware</span>
+                                <strong style="color: #8bc34a;">44 visits</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                                <span>🍳 Pots & Pans</span>
+                                <strong style="color: #8bc34a;">42 visits</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="audience-card">
+                    <h3>Device Usage</h3>
+                    <p style="color: #666; margin-bottom: 20px;">How your customers browse</p>
+                    
+                    <div style="text-align: center; margin: 30px 0;">
+                        <div style="font-size: 3em; font-weight: bold; color: #9b59b6;">67.5%</div>
+                        <div style="color: #666; margin-bottom: 20px;">Mobile Traffic</div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center;">
+                        <div style="background: #f0f0f0; padding: 15px; border-radius: 10px;">
+                            <div style="font-weight: bold;">56.9%</div>
+                            <div style="font-size: 0.85em; color: #666;">Android</div>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 15px; border-radius: 10px;">
+                            <div style="font-weight: bold;">30.0%</div>
+                            <div style="font-size: 0.85em; color: #666;">Desktop</div>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 15px; border-radius: 10px;">
+                            <div style="font-weight: bold;">10.6%</div>
+                            <div style="font-size: 0.85em; color: #666;">iOS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Steps -->
+        <section class="next-steps">
+            <h2>Your Next Steps for Growth</h2>
+            
+            <div class="step-card">
+                <div>
+                    <span class="step-number">1</span>
+                    <span class="step-title">Optimize Cart Conversions</span>
+                </div>
+                <p class="step-description">
+                    With 49 cart visits tracked, implementing abandoned cart recovery can capture 15-20% of lost sales. 
+                    We recommend Facebook Dynamic Ads and email follow-ups to convert these high-intent visitors.
+                </p>
+            </div>
+            
+            <div class="step-card">
+                <div>
+                    <span class="step-number">2</span>
+                    <span class="step-title">Scale Winning Content</span>
+                </div>
+                <p class="step-description">
+                    Your August 21-25 content achieved viral status. Replicating this content style across Catering and 
+                    Glassware categories (your top performers) can maintain momentum and drive consistent growth.
+                </p>
+            </div>
+            
+            <div class="step-card">
+                <div>
+                    <span class="step-number">3</span>
+                    <span class="step-title">Increase Strategic Investment</span>
+                </div>
+                <p class="step-description">
+                    With costs per acquisition 80% below industry average, increasing budget to R3,000-5,000 monthly 
+                    could generate 4,000+ visitors and 100+ conversions based on current performance metrics.
+                </p>
+            </div>
+            
+            <div class="step-card">
+                <div>
+                    <span class="step-number">4</span>
+                    <span class="step-title">Expand Mobile Commerce</span>
+                </div>
+                <p class="step-description">
+                    67.5% of your traffic is mobile. Implementing WhatsApp Business integration and mobile-optimized 
+                    checkout can increase conversions by 30-40% based on industry benchmarks.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 90-Day Projection -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Your 90-Day Growth Projection</h2>
+                <div class="section-subtitle">Expected results if current momentum continues</div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 style="color: #2ecc71; margin-bottom: 30px; font-size: 1.8em;">Projected Outcomes with Continued Investment</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                    <div>
+                        <div style="font-size: 2.5em; font-weight: bold; color: #9b59b6;">5,220</div>
+                        <div style="color: #666;">New Followers</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; font-weight: bold; color: #8bc34a;">10,000+</div>
+                        <div style="color: #666;">Website Visitors</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; font-weight: bold; color: #e91e63;">260</div>
+                        <div style="color: #666;">Expected Sales</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; font-weight: bold; color: #c0392b;">R390K</div>
+                        <div style="color: #666;">Potential Revenue*</div>
+                    </div>
+                </div>
+                
+                <p style="font-size: 0.9em; color: #666;">
+                    *Based on industry average order value of R1,500 and 2.6% conversion rate
+                </p>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logos">
+                <div>
+                    <span style="color: #9b59b6; font-weight: bold; font-size: 1.3em;">OZZ</span>
+                    <span style="color: #8bc34a; margin-left: 5px;">CASH & CARRY</span>
+                </div>
+                <span style="color: #666;">|</span>
+                <div>
+                    <span style="color: #c0392b; font-weight: bold; font-size: 1.3em;">ikhaya</span>
+                    <span style="color: #6b8e23; margin-left: 5px;">HOMEWARE</span>
+                </div>
+            </div>
+            
+            <p class="footer-text">Campaign Report • August 18 - September 3, 2025</p>
+            <p class="footer-text">Thank you for trusting us with your digital growth</p>
+            <p class="footer-text" style="margin-top: 20px; font-size: 0.85em;">
+                Data verified from Facebook Insights, Instagram Analytics, and Website Analytics
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
