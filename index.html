@@ -66,6 +66,24 @@
             gap: 30px;
             margin-bottom: 30px;
             flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo-container img {
+            height: 80px;
+            max-width: 200px;
+            background: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            object-fit: contain;
+        }
+        
+        /* Fallback if images don't load */
+        .logo-container img:not([src]), 
+        .logo-container img[src=""] {
+            display: none;
         }
         
         .logo-box {
@@ -418,6 +436,7 @@
             gap: 30px;
             margin-bottom: 20px;
             opacity: 0.8;
+            flex-wrap: wrap;
         }
         
         .footer-text {
@@ -476,6 +495,8 @@
             .section { padding: 30px 20px; }
             .metric-value { font-size: 2.2em; }
             .roi-headline { font-size: 1.8em; }
+            .logo-container { gap: 15px; }
+            .logo-container img { height: 60px; }
         }
         
         @media print {
@@ -488,12 +509,24 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-           <!-- Replace the current logo section with: -->
-<div class="logo-container">
-    <img src="OZZ-logo-transparent-1-1.png" alt="OZZ Cash & Carry" style="height: 80px; background: white; padding: 10px; border-radius: 10px;">
-    <span style="color: white; font-size: 1.5em; margin: 0 20px;">×</span>
-    <img src="IKhaya (Logo) (3).png" alt="Ikhaya Homeware" style="height: 80px; background: white; padding: 10px; border-radius: 10px;">
-</div>
+            <div class="logo-container">
+                <!-- Using URL-encoded filename for the Ikhaya logo with spaces -->
+                <img src="OZZ-logo-transparent-1-1.png" alt="OZZ Cash & Carry" onerror="this.style.display='none'">
+                <span style="color: white; font-size: 1.5em; margin: 0 10px;">×</span>
+                <img src="IKhaya%20(Logo)%20(3).png" alt="Ikhaya Homeware" onerror="this.style.display='none'">
+                
+                <!-- Fallback text logos if images don't load -->
+                <noscript>
+                    <div class="logo-box">
+                        <div style="font-size: 36px; font-weight: bold; background: linear-gradient(135deg, #9b59b6, #8bc34a, #e91e63); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">OZZ</div>
+                        <div style="font-size: 12px; color: #9b59b6; letter-spacing: 2px;">CASH & CARRY</div>
+                    </div>
+                    <span style="color: white; font-size: 1.5em;">×</span>
+                    <div class="logo-box">
+                        <div style="font-size: 32px; font-weight: bold; color: #c0392b;">ikhaya</div>
+                        <div style="font-size: 12px; color: #6b8e23; letter-spacing: 2px;">HOMEWARE</div>
+                    </div>
+                </noscript>
             </div>
             <h1>Your Campaign Success Story</h1>
             <div class="subtitle">August 18 - September 3, 2025 | Remarkable Results Achieved</div>
