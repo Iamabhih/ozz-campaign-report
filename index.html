@@ -11,6 +11,10 @@
     <meta property="og:type" content="website">
     <meta name="description" content="Quarterly performance report showing exceptional growth across all digital channels with strong business impact">
     
+    <!-- Preconnect for faster logo loading -->
+    <link rel="preconnect" href="https://github.com">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    
     <style>
         /* Reset & Base Styles */
         * {
@@ -62,10 +66,12 @@
             z-index: 2;
         }
         
-        .logo-container img {
+        .logo-img {
             height: 80px;
             width: auto;
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+            max-width: 100%;
+            object-fit: contain;
         }
         
         .logo-fallback {
@@ -73,6 +79,7 @@
             font-weight: 800;
             color: white;
             letter-spacing: -1px;
+            display: none;
         }
         
         .logo-subtitle {
@@ -80,6 +87,7 @@
             opacity: 0.9;
             letter-spacing: 3px;
             margin-top: -5px;
+            display: none;
         }
         
         h1 {
@@ -629,6 +637,22 @@
             font-weight: 600;
         }
         
+        /* Total Investment Summary */
+        .total-investment {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .total-amount {
+            font-size: 3em;
+            font-weight: 800;
+            color: #1a3a8f;
+            margin: 10px 0;
+        }
+        
         /* Footer */
         .footer {
             background: #1a1a1a;
@@ -658,13 +682,22 @@
             }
             .platform-grid, .content-grid { grid-template-columns: 1fr; }
             .investment-grid, .roi-grid { grid-template-columns: 1fr; }
-            .logo-container img { height: 60px; }
+            .logo-img { height: 60px; }
+            .total-amount { font-size: 2.2em; }
         }
         
         @media (max-width: 480px) {
             h1 { font-size: 1.6em; }
             .roi-value, .website-stat-value { font-size: 1.8em; }
             .investment-amount { font-size: 1.8em; }
+            .total-amount { font-size: 1.8em; }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+            .platform-card { break-inside: avoid; }
         }
     </style>
 </head>
@@ -673,9 +706,10 @@
         <!-- Header -->
         <header class="header">
             <div class="logo-container">
-                <img src="https://github.com/Iamabhih/ozz-campaign-report/blob/main/OZZ-logo-transparent-1-1.png?raw=true" alt="Ozz Cash & Carry" onerror="this.style.display='none'">
-                <div class="logo-fallback" style="display: none;">OZZ</div>
-                <div class="logo-subtitle" style="display: none;">CASH & CARRY</div>
+                <!-- Updated logo URL with proper raw GitHub link -->
+                <img class="logo-img" src="https://raw.githubusercontent.com/Iamabhih/ozz-campaign-report/main/OZZ-logo-transparent-1-1.png" alt="Ozz Cash & Carry">
+                <div class="logo-fallback">OZZ</div>
+                <div class="logo-subtitle">CASH & CARRY</div>
             </div>
             <h1>Q4 2025 Digital Marketing Performance Report</h1>
             <div class="subtitle">October 4, 2025 - January 1, 2026 | Comprehensive Channel Analysis</div>
@@ -696,14 +730,23 @@
                 
                 <div class="summary-card">
                     <h3>💰 Strong ROI Performance</h3>
-                    <p>R8,497.35 Meta ad spend delivered R2.12 cost per website visitor with 46-minute average visit duration. Google Business generated 1,715 direction requests indicating high purchase intent.</p>
+                    <p>Total digital investment delivered exceptional value with R2.12 cost per website visitor and 46-minute average visit duration. Google Business generated 1,715 direction requests indicating high purchase intent.</p>
                 </div>
                 
                 <div class="summary-card">
                     <h3>📈 Omni-Channel Impact</h3>
-                    <p>Social media drove 4,000+ website visitors while Google search dominated local discovery with 15,409 profile views. TikTok exploded with 5,572 new followers organically.</p>
+                    <p>Social media drove 4,000+ website visitors while Google search dominated local discovery with 15,409 profile views. TikTok delivered explosive growth with 5,572 new followers.</p>
                 </div>
             </div>
+        </section>
+        
+        <!-- Total Investment Summary -->
+        <section class="total-investment">
+            <h2 style="color: #1a3a8f; margin-bottom: 10px;">Total Digital Investment</h2>
+            <div class="total-amount">~R13,300</div>
+            <p style="color: #666; max-width: 800px; margin: 0 auto;">
+                Combined investment across Meta platforms and TikTok advertising for Q4 2025 campaigns
+            </p>
         </section>
         
         <!-- Investment & ROI -->
@@ -719,10 +762,10 @@
                 </div>
                 
                 <div class="investment-card">
-                    <h3>TikTok Ad Spend</h3>
-                    <div class="investment-amount">Pending</div>
-                    <div>Campaign invoices under review</div>
-                    <div class="investment-note">Exceptional organic growth achieved</div>
+                    <h3>TikTok Ad Spend (Estimated)</h3>
+                    <div class="investment-amount">~R4,800</div>
+                    <div>8 campaigns × ~R600 each</div>
+                    <div class="investment-note">Final invoices pending confirmation</div>
                 </div>
                 
                 <div class="investment-card">
@@ -761,9 +804,9 @@
                 </div>
                 
                 <div class="roi-card">
-                    <div class="roi-value">5,572</div>
-                    <div class="roi-label">TikTok Followers (Organic)</div>
-                    <div class="roi-comparison">Zero ad spend</div>
+                    <div class="roi-value">R0.86</div>
+                    <div class="roi-label">Cost Per TikTok Follower</div>
+                    <div class="roi-comparison">Excellent ROI</div>
                 </div>
             </div>
         </section>
@@ -800,8 +843,8 @@
                             <span class="metric-value">~1,200</span>
                         </div>
                         <div class="metric-row">
-                            <span class="metric-label">Engagement Rate</span>
-                            <span class="metric-value">0.74%</span>
+                            <span class="metric-label">Ad Spend</span>
+                            <span class="metric-value">Included in Meta</span>
                         </div>
                     </div>
                 </div>
@@ -830,8 +873,8 @@
                             <span class="metric-value">~430</span>
                         </div>
                         <div class="metric-row">
-                            <span class="metric-label">Engagement Rate</span>
-                            <span class="metric-value">0.23%</span>
+                            <span class="metric-label">Ad Spend</span>
+                            <span class="metric-value">Included in Meta</span>
                         </div>
                     </div>
                 </div>
@@ -856,12 +899,12 @@
                             <span class="metric-value">41,124 views</span>
                         </div>
                         <div class="metric-row">
-                            <span class="metric-label">Engagement Rate</span>
-                            <span class="metric-value">~2.5%</span>
+                            <span class="metric-label">Ad Spend (Estimated)</span>
+                            <span class="metric-value">~R4,800</span>
                         </div>
                         <div class="metric-row">
-                            <span class="metric-label">Profile Views</span>
-                            <span class="metric-value">~1,000</span>
+                            <span class="metric-label">Campaigns</span>
+                            <span class="metric-value">8 campaigns</span>
                         </div>
                     </div>
                 </div>
@@ -1217,7 +1260,7 @@
                 <div class="recommendation-card">
                     <div class="recommendation-number">1</div>
                     <div class="recommendation-title">Scale TikTok with Paid Strategy</div>
-                    <p>Formalize TikTok advertising with R3,000-5,000 monthly budget. The platform delivered 5,572 followers organically - paid amplification could double Q1 growth with proper tracking.</p>
+                    <p>Formalize TikTok advertising with R3,000-5,000 monthly budget. The platform delivered 5,572 followers with estimated R4,800 spend - optimize for even better ROI with proper tracking.</p>
                 </div>
                 
                 <div class="recommendation-card">
@@ -1262,30 +1305,54 @@
             <p class="footer-text">October 4, 2025 - January 1, 2026 | Multi-Channel Analysis</p>
             <p class="footer-text">Data Sources: Meta Analytics, TikTok Analytics, Google Business, Website Analytics</p>
             <p class="footer-text" style="margin-top: 20px; font-size: 0.85em;">
-                Report Generated: January 3, 2026 | Performance Period: Q4 2025
+                Report Generated: January 3, 2026 | Performance Period: Q4 2025 | TikTok Ad Spend Estimated
             </p>
         </footer>
     </div>
 
     <script>
-        // Fallback for logo if image fails to load
+        // Enhanced logo loading with fallback
         document.addEventListener('DOMContentLoaded', function() {
-            const logoImg = document.querySelector('.logo-container img');
+            const logoImg = document.querySelector('.logo-img');
             const logoFallback = document.querySelector('.logo-fallback');
             const logoSubtitle = document.querySelector('.logo-subtitle');
             
-            logoImg.onerror = function() {
-                this.style.display = 'none';
-                if (logoFallback) logoFallback.style.display = 'block';
-                if (logoSubtitle) logoSubtitle.style.display = 'block';
+            // Check if image loads successfully
+            logoImg.onload = function() {
+                console.log('Logo loaded successfully');
             };
             
-            // Check if image loaded successfully
+            logoImg.onerror = function() {
+                console.log('Logo failed to load, showing fallback');
+                this.style.display = 'none';
+                if (logoFallback) {
+                    logoFallback.style.display = 'block';
+                    logoFallback.style.marginBottom = '10px';
+                }
+                if (logoSubtitle) {
+                    logoSubtitle.style.display = 'block';
+                }
+            };
+            
+            // Check if image is already broken
             if (logoImg.complete && logoImg.naturalHeight === 0) {
                 logoImg.style.display = 'none';
-                if (logoFallback) logoFallback.style.display = 'block';
-                if (logoSubtitle) logoSubtitle.style.display = 'block';
+                if (logoFallback) {
+                    logoFallback.style.display = 'block';
+                    logoFallback.style.marginBottom = '10px';
+                }
+                if (logoSubtitle) {
+                    logoSubtitle.style.display = 'block';
+                }
             }
+            
+            // Add loading state
+            logoImg.style.opacity = '0';
+            logoImg.style.transition = 'opacity 0.3s ease';
+            
+            setTimeout(() => {
+                logoImg.style.opacity = '1';
+            }, 100);
         });
     </script>
 </body>
