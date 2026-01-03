@@ -1,4 +1,4 @@
-# Ikhaya Homeware & OZZ Cash & Carry Campaign Report
+# OZZ Cash & Carry Campaign Report
 
 ## Campaign Performance Report
 August 18 - September 3, 2025
